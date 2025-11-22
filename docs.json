@@ -18,20 +18,14 @@
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "troubleshooting"
             ]
           },
+         
           {
-            "group": "Customization",
+            "group": "License Protection",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
+              "essentials/introduction",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
