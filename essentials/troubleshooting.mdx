@@ -1,0 +1,32 @@
+---
+title: "Troubleshooting"
+description: "Common problems, causes, and short solutions."
+---
+
+# Troubleshooting
+
+Common quick fixes for zdev projects.
+
+---
+
+## App won't start
+- Cause: missing env variables or incorrect `.env.local`.
+- Fix: copy `.env.example` → `.env.local`, reinstall deps, and restart.
+
+```bash
+cp .env.example .env.local
+rm -rf node_modules package-lock.json && npm install
+npm run dev
+```
+
+---
+
+## License activation fails
+- Cause: wrong license key or missing env var.
+- Fix: confirm license value in `.env.local` and contact support if problems persist.
+
+---
+
+If you need help, include project name, the command you ran, and the error logs when contacting support.
+
+Use the variables and paths provided in your delivery package.

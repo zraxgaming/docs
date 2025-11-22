@@ -1,0 +1,15 @@
+{
+  "essentials/overview": "compass",
+  "essentials/quickstart": "rectangle-terminal",
+  "essentials/troubleshooting": "life-buoy",
+  "essentials/introduction": "lock-closed",
+  "essentials/suspensions": "ban",
+  "usage/overview": "compass",
+  "usage/updating": "pencil",
+  "usage/dashboard": "layout",
+  "usage/customization": "palette",
+  "issues/contact": "life-buoy",
+  "changelog/index": "history",
+  "deployment/overview": "cloud-upload",
+  "deployment/vercel": "cloud"
+}

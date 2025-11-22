@@ -1,0 +1,34 @@
+---
+title: "Vercel Deployment"
+description: "Deploying zdev projects to Vercel."
+---
+
+# Deploying to Vercel
+
+Vercel provides a simple workflow for most zdev projects. This guide covers a common flow using the Vercel web dashboard and the CLI.
+
+---
+
+## Quick steps (web)
+
+1. Connect your repository to Vercel (GitHub/GitLab/Bitbucket).
+2. Configure environment variables in the Vercel project settings (copy from `.env.local`).
+3. Select the correct framework preset (Next.js, static, etc.) and choose the build command (usually `npm run build`) and output directory.
+4. Deploy — Vercel will build and publish automatically on push.
+
+---
+
+## Using the Vercel CLI
+
+```bash
+# login
+vercel login
+
+# from project root, deploy
+vercel --prod
+```
+
+## Notes
+
+- Make sure license-related env vars are set in the Vercel dashboard so activation works in production.
+- After deploy, visit your site in an incognito window to verify assets and license activation.

@@ -1,0 +1,63 @@
+---
+title: "Dashboard"
+description: "Client Portal and common features."
+---
+
+## Client Portal
+
+This page explains the Client Portal and lists the common features available to end clients.
+
+---
+
+### Client Portal
+
+- **Purpose:** a simplified interface for end clients to view their projects, invoices, and support requests.
+- **Common features:**
+  - View active projects and statuses
+  - Manage profile and contact information
+  - Receive notifications and messages
+  - Submit support requests or tickets
+
+---
+
+<Tabs>
+  <Tab title="Changelog">
+    <Note icon="history">Recent changes to zdev and the delivered project.</Note>
+
+    - **2025-11-22** — Added Getting Started guides under `essentials/` and improved onboarding flow.
+    - **2025-10-12** — License activation improvements and clearer error reporting.
+    - **2025-08-03** — Client Portal: added notifications and ticket submission endpoints.
+
+    <Tip icon="sparkles">Keep an eye on the changelog to know when to pull updates or request patches.</Tip>
+  </Tab>
+
+  <Tab title="Deployment / Installation">
+    <p>Quick deployment checklist and common install steps for zdev projects.</p>
+
+    **Pre-deploy**
+
+    - Create `.env.local` from `.env.example` and add your license and environment variables.
+    - Verify Node version (check `.nvmrc` if provided) and install dependencies.
+
+    **Build & Deploy (example)**
+
+    ```bash
+    # from project root
+    cp .env.example .env.local
+    npm install
+    npm run build
+    # deploy (Vercel example)
+    vercel --prod
+    ```
+
+    **Notes & tips**
+
+    - Use the environment variables and paths provided in your delivery package.
+    - For self-hosting: build the static output and serve with Nginx or a simple static host. For containerized deploys, build into a Docker image and set runtime env vars from secrets.
+    - After deploy, verify the license activation and portal URLs in a private/incognito window.
+  </Tab>
+</Tabs>
+
+---
+
+For instructions on accessing credentials and portal URLs, see the delivery `README` or contact support.

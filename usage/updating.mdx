@@ -1,0 +1,52 @@
+---
+title: "Updating"
+description: "How to update site text, images, and styles."
+---
+
+# Updating Content and Styles
+
+This guide shows where to change text, images, and styles in your project.
+
+---
+
+## Text and pages
+
+- Edit page files in `/pages` or `/app` (depending on framework). Pages import components from `/components` and reference text directly.
+- For repeated copy, check for `locales`, JSON/YAML content files, or a CMS integration.
+
+## Images and static assets
+
+- Put images in `/public` and reference them by path (e.g., `/images/logo.png`).
+- Optimize large images before upload to reduce build time and bandwidth.
+
+## Styles and Tailwind
+
+- If the project uses Tailwind, update `tailwind.config.js` for theme tokens and `styles/globals.css` for base rules.
+- For plain CSS, edit the relevant CSS or SCSS files in `/styles`.
+
+## Typical folders referenced
+
+- **Components:** `/components`
+- **Pages:** `/pages` or `/app`
+- **Public assets:** `/public`
+
+---
+
+## Deploying updates
+
+- For Vercel: push to the configured branch or use the Vercel dashboard to redeploy.
+- For manual uploads: build (`npm run build`) then upload the generated `dist` or `.vercel/output` depending on the framework.
+
+Example deploy commands:
+
+```bash
+# build
+npm run build
+
+# Vercel deploy (example)
+vercel --prod
+```
+
+---
+
+Use the variables and paths provided in your delivery package.

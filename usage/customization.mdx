@@ -1,0 +1,46 @@
+---
+title: "Customization"
+description: "How to customize branding, colors, and assets."
+---
+
+
+
+This page covers where to change branding, colors, logos, and other assets.
+
+---
+
+## Branding and logos
+
+- Replace logo files in `/public/logo` or the path specified in the delivery.
+- Update image references in header/footer components under `/components`.
+
+## Colors and design tokens
+
+- If Tailwind is used, edit `tailwind.config.js` to change color tokens and theme values.
+- For CSS variables, update the variables file (often `:root` in `styles/globals.css`).
+
+Example (Tailwind snippet):
+
+```js
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#111827', // example minimal typographic color
+      }
+    }
+  }
+}
+```
+
+## Fonts and typography
+
+- Fonts may be loaded from `/public/fonts` or a CDN (Google Fonts). Check the global stylesheet for `@font-face` or import rules.
+- Adjust base font sizes in the global CSS or Tailwind base layer.
+
+---
+
+When making changes, test locally (`npm run dev`) and verify the production build before deploying.
+
+Use the variables and paths provided in your delivery package.

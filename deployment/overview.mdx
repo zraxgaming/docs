@@ -1,0 +1,40 @@
+---
+title: "Installation"
+description: "Installation and deployment overview for zdev projects."
+---
+
+# Installation & Deployment
+
+This page explains general installation steps and deployment options for zdev projects. Use the specific provider pages (Vercel, self-hosting, Docker) for detailed instructions.
+
+---
+
+## Pre-install checklist
+
+- Copy `.env.example` → `.env.local` and add the license key and any environment variables provided in your delivery.
+- Verify Node version and runtime requirements (check `.nvmrc` or `engines` in `package.json`).
+- Ensure build tools (e.g., `npm`, `pnpm`, or `yarn`) are installed.
+
+---
+
+## Build steps (typical)
+
+```bash
+# install deps
+npm install
+
+# build
+npm run build
+```
+
+After building, follow your host's deployment instructions (Vercel, Netlify, static host, or container registry).
+
+---
+
+## Provider-specific guides
+
+- Vercel: see `deployment/vercel` for an example workflow and domain setup.
+- Self-hosting: build static assets and serve with Nginx or a static server.
+- Docker: build a production image and run with environment variables from secrets.
+
+Use the variables and paths provided in your delivery package.

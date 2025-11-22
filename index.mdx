@@ -1,97 +1,109 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Welcome to zdev"
+description: "Your complete guide to installing, deploying, and using your custom zdev project."
+---
+<Hero
+  title="Welcome to zdev Documentation"
+  subtitle="A concise guide for installing, deploying, and customizing your custom-built system."
+  ctaText="Quickstart"
+  ctaLink="/essentials/quickstart"
+  secondCtaText="Getting Started"
+  secondCtaLink="/essentials/overview"
+/>
+
 ---
 
-## Setting up
+<Section title="What You Get with zdev" subtitle="Everything included in your custom project build">
 
-Get your documentation site up and running in minutes.
-
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+<Cards>
+  <Card title="Clean Source Code" icon="folder-open">
+    Personalized, maintainable code — no generic templates.
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
 
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
+  <Card title="License Protection" icon="key" href="/essentials/introduction">
+    Built-in licensing to protect your commercial release.
   </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
 
-## Need inspiration?
+  <Card title="Client Portal" icon="layout" href="/usage/dashboard">
+    A lightweight portal for clients to view projects, invoices, and support.
+  </Card>
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://zdev.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+  <Card title="Environment Setup" icon="file-text">
+    `.env.example` is included; create `.env.local` with your keys.
+  </Card>
+
+  <Card title="Deploy Ready" icon="cloud-upload">
+    Production-ready builds and recommended deploy steps for Vercel.
+  </Card>
+
+  <Card title="Support" icon="life-buoy" href="/issues/contact">
+    Email support@zdev.dev for setup, license, or troubleshooting help.
+  </Card>
+</Cards>
+
+</Section>
+
+---
+
+<Section title="Quick Links" subtitle="Jump straight to the guides you need">
+
+<CardGroup cols={3}>
+  <Card title="Getting Started" icon="rocket" href="/essentials/overview">
+    Setup, environment, and first steps.
+  </Card>
+
+  <Card title="Quickstart" icon="rectangle-terminal" href="/essentials/quickstart">
+    One-block setup commands to get running fast.
+  </Card>
+
+  <Card title="Troubleshooting" icon="life-buoy" href="/essentials/troubleshooting">
+    Fast fixes for common issues.
+  </Card>
+</CardGroup>
+
+</Section>
+
+---
+
+<Section title="Start Fast" subtitle="Copy, paste, run">
+
+```bash
+# from project root
+cp .env.example .env.local
+npm install
+npm run dev
+```
+
+<Tip icon="light-bulb">If your project uses `yarn` or `pnpm`, swap the install command accordingly.</Tip>
+
+<Note icon="info">
+Your project may include deployment-specific environment variables — use the variables and paths provided in your delivery package.
+</Note>
+
+</Section>
+
+---
+
+<Section title="FAQ" subtitle="Quick answers">
+
+<AccordionGroup>
+  <Accordion title="Where do I put environment variables?">
+    All required variables go in <code>.env.local</code>. Use only the variables included in your delivery.
+  </Accordion>
+
+  <Accordion title="How do I get support?">
+    Email <strong>support@zdev.dev</strong> or open a ticket from the Client Portal (if included).
+  </Accordion>
+
+  <Accordion title="License concerns">
+    Check <a href="/essentials/introduction">Licenses → Introduction</a> and contact support if activation fails.
+  </Accordion>
+</AccordionGroup>
+
+</Section>
+
+---
+
+<Callout type="success">
+Ready to begin? Start with the <a href="/essentials/quickstart">Quickstart guide</a> or explore detailed topics in the sidebar.
+</Callout>

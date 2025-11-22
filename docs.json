@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "ZDev",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#111827",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -16,9 +16,9 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "troubleshooting"
+              "essentials/overview",
+              "essentials/quickstart",
+              "essentials/troubleshooting"
             ]
           },
          
@@ -26,37 +26,45 @@
             "group": "License Protection",
             "pages": [
               "essentials/introduction",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "essentials/suspensions"
             ]
           },
           {
-            "group": "AI tools",
+          "group": "Usage Guides",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "usage/overview",
+              "usage/updating",
+              "usage/dashboard",
+              "usage/customization"
+            ]
+          },
+          {
+            "group": "Technical Issues",
+            "pages": [
+              "issues/contact"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Changelog",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "History",
             "pages": [
-              "api-reference/introduction"
+              "changelog/index"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Installation & Deploy",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "deployment/overview",
+              "deployment/vercel"
             ]
           }
         ]
@@ -65,33 +73,33 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Get Started",
+          "href": "https://shopzyra.site/get-started",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://shopzyra.site/blog",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/lightd.png",
+    "dark": "/logo/light.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:zainabusal113@gmail.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Home",
+      "href": "https://shopzyra.site"
     }
   },
   "contextual": {
